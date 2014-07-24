@@ -18,9 +18,17 @@ set mydude=%mypath%\bin\avrdude
 
 cscript %mypath%myvbscript.vbs
 
-chgport
 @echo off
-set /p whichcom="Which COM port above enumerated as COMxx = \Device\VCP0?  For example, please enter 5 if you see COM5 = \Device\VCP0    " %=%
+echo ==============================================
+echo.
+chgport
+echo.
+echo Which COM port above looks like:  COMxx = \Device\VCP0?
+echo For example, please enter 5 if you see COM5 = \Device\VCP0
+echo NOTE: If you don't see this go to http://www.ftdichip.com/Drivers/VCP.htm and download the appropriate driver.
+set /p whichcom=%=%
+
+rem set /p whichcom="Which COM port above enumerated as COMxx = \Device\VCP0?  For example, please enter 5 if you see COM5 = \Device\VCP0    " %=%
 set X=COM%whichcom%
 
 rem set cmd="chgport"
