@@ -12,17 +12,21 @@ set myconf=%mypath%avrdude.conf
 
 set myhex=%mypath%v%version%.hex
 echo %myhex%
-pause
+
 set mydude=%mypath%\bin\avrdude
 
 
 cscript %mypath%myvbscript.vbs
 
-set cmd="chgport"
+chgport
+@echo off
+set /p whichcom="Which COM port above enumerated as COMxx = \Device\VCP0?  For example, please enter 5 if you see COM5 = \Device\VCP0    " %=%
+set X=COM%whichcom%
 
-FOR /F %%i IN (' %cmd% ') DO SET X=%%i
+rem set cmd="chgport"
+REM FOR /F %%i IN (' %cmd% ') DO SET X=%%i
 
-echo %X%
+REM echo %X%
 
 @echo off
 :set /p id="Enter ID: " %=%
