@@ -1,3 +1,5 @@
+set version=23
+
 set mypath=%~dp0
 
 :"C:\Program Files (x86)\Arduino\Arduino ERW 1.0.5\hardware/tools/avr/bin/avrdude" -C"C:\Program Files (x86)\Arduino\Arduino ERW 1.0.5\hardware/tools/avr/etc/avrdude.conf" -v -v -v -v -patmega2560 -cstk500v1 -P\\.\COM6 -b57600 -D -V -Uflash:w:C:\Users\Nate\AppData\Local\Temp\build2226663903393793181.tmp\miniE_cineMoco.cpp.hex:i 
@@ -8,9 +10,9 @@ rem echo "%mypath%avrdude.exe"
 
 set myconf=%mypath%avrdude.conf
 
-set myhex=%mypath%v22.hex
+set myhex=%mypath%v%version%.hex
 echo %myhex%
-
+pause
 set mydude=%mypath%\bin\avrdude
 
 

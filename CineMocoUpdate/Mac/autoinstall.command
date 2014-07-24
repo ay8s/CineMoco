@@ -1,4 +1,6 @@
 #!/bin/bash
+version=23
+hexfile="v$version"&"hex"
 
 baseDir="`dirname "$BASH_SOURCE"`/.."
 
@@ -16,10 +18,10 @@ printf "Done.\n\n"
 jaja="$baseDir/Mac"
 
 printf "\nBegin uploading cineMoco binary!!\n\n"
-#$jaja/avrdude -C $jaja/avrdude.conf -v -p m2560 -c stk500v1 -P /dev/tty.usbserial-cineMoco -b 57600 -D -U flash:w:$jaja/Jul_21-v2_2-miniE_cineMoco.cpp.hex
 
 # Because some of the controllers will enumerate as *usbserial-xxxxxxxx
-"$jaja/avrdude" -C "$jaja/avrdude.conf" -v -p m2560 -c stk500v1 -P /dev/cu.usbserial* -b 57600 -D -U flash:w:"$jaja/Jul_21-v2_2-miniE_cineMoco.cpp.hex"
+#"$jaja/avrdude" -C "$jaja/avrdude.conf" -v -p m2560 -c stk500v1 -P /dev/cu.usbserial* -b 57600 -D -U flash:w:"$jaja/$hexfile"
+"$jaja/avrdude" -C "$jaja/avrdude.conf" -v -p m2560 -c stk500v1 -P /dev/cu.usbserial* -b 57600 -D -U flash:w:"$jaja/v23.hex"
 #===========================
 
 

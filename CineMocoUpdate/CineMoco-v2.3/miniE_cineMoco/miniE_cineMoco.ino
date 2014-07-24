@@ -62,7 +62,7 @@
 // Version of the software
 
 #define DEF_VERSION                     2
-#define DEF_SUBVERSION                  2
+#define DEF_SUBVERSION                  3
 
 
 
@@ -596,7 +596,7 @@ prog_char string_69 [] PROGMEM = "/";             // /
 
 prog_char string_70 [] PROGMEM = "Information";
 prog_char string_71 [] PROGMEM = "miniEngine";
-prog_char string_72 [] PROGMEM = "CineMoco v2.1";
+prog_char string_72 [] PROGMEM = "CineMoco v2.3";
 prog_char string_73 [] PROGMEM = "Developers (in";
 prog_char string_74 [] PROGMEM = "alpahabet. order):";
 prog_char string_75 [] PROGMEM = "Airic Lenz,";
