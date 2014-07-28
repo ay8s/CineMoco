@@ -19,6 +19,7 @@ Your terminal should now appear as if it is having a seisure.  This is good.
 
 The easier_instructions.pdf has a nice graphic to walk you through this process.
 
+
 #####If you are interested in hacking on the CineMoco:
 The Arduino code can be found inside of "CineMoco-vX.X" folder.
 
