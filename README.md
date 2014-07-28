@@ -6,6 +6,17 @@ CineMoco
 the Windows folder for whichever OS you are running. You're computer will warn you it's from an unidentified developer.  Click open.   The Mac script should 
 work on Linux as well.
 
+NOTE: If you are on windows the script will need to know which COM port to use.  The script will list your available com ports like so:
+
+COM13 = \Device\BlahBlah
+COM4 = \Device\Jaja
+COM7 = \Device\VCP0
+
+--Followed by some instructions after which you will enter ~~the number only~~ of the port which ends in VCP0
+"7" + "Enter"
+
+The easier_instructions.pdf has a nice graphic to walk you through this process.
+
 #####If you are interested in hacking on the CineMoco:
 The Arduino code can be found inside of "CineMoco-vX.X" folder.
 
