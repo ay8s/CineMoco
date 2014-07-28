@@ -15,6 +15,8 @@ COM7 = \Device\VCP0
 Followed by some instructions after which you will enter _the number only_ of the port which ends in VCP0.  
 "7" + "Enter"
 
+Your terminal should now appear as if it is having a seisure.  This is good.
+
 The easier_instructions.pdf has a nice graphic to walk you through this process.
 
 #####If you are interested in hacking on the CineMoco:
