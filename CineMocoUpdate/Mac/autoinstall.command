@@ -1,5 +1,5 @@
 #!/bin/bash
-version=23
+version=24
 hexfile="v$version"".hex"
 
 baseDir="`dirname "$BASH_SOURCE"`/.."
@@ -21,7 +21,7 @@ printf "\nBegin uploading cineMoco binary!!\n\n"
 
 # Because some of the controllers will enumerate as *usbserial-xxxxxxxx
 "$jaja/avrdude" -C "$jaja/avrdude.conf" -v -p m2560 -c stk500v1 -P /dev/cu.usbserial* -b 57600 -D -U flash:w:"$jaja/$hexfile"
-#"$jaja/avrdude" -C "$jaja/avrdude.conf" -v -p m2560 -c stk500v1 -P /dev/cu.usbserial* -b 57600 -D -U flash:w:"$jaja/v23.hex"
+#"$jaja/avrdude" -C "$jaja/avrdude.conf" -v -p m2560 -c stk500v1 -P /dev/cu.usbserial* -b 57600 -D -U flash:w:"$jaja/v24.hex"
 #===========================
 
 
