@@ -1,0 +1,11 @@
+CineMoco Software Versions:
+
+1.x - first generation built for dolly moves
+2.0 - pan, tilt, slide, dolly control. Improved user interface.
+2.1 - adds daisy chaining and ability to control two and three axis moves from one controller. Some setups do no work properly. Some controllers with 2.1 software have issues with the USB driver and need to be updated by Cinetics.
+2.2 - stable multi axis control
+2.3 - minor code fix
+2.4 - fixes bug with wrong distance in high motor speed
+      - adds all motor setting to can set keyframes for or move all motors at the same time
+      - run mode move increments set to 1cm
+      - adds Panasonic and Other cam type
