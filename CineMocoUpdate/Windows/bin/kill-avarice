@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/bin/sh
 if [ -f /usr/bin/cygpath.exe ]; then
   # cygwin
@@ -11,3 +12,18 @@ else
   # linux, probably some others at least
   killall -q avarice
 fi
+=======
+#!/bin/sh
+if [ -f /usr/bin/cygpath.exe ]; then
+  # cygwin
+  while
+    avaricepid=`ps -es | grep '/avarice' | head -1 | cut -c2-7`
+    [ "$avaricepid" != "" ]
+  do
+    kill -9 $avaricepid
+  done
+else
+  # linux, probably some others at least
+  killall -q avarice
+fi
+>>>>>>> ac6d7e90a2ce07437d1509844ab15219314d6606

@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 #!/bin/sh
 exec ice-gdb --debugger avr-insight "$@"
+=======
+#!/bin/sh
+exec ice-gdb --debugger avr-insight "$@"
+>>>>>>> ac6d7e90a2ce07437d1509844ab15219314d6606
